@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PaymentGatewayIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PaymentGatewayIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.checkout.payment.gateway.integrationTest.html">com.checkout.payment.gateway.integrationTest</a> &gt; PaymentGatewayIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.535s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">whenBankDeclinesPayment_thenReturnsDeclined()</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenPaymentInvalid_thenReturnsRejected()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenPaymentWithIdExists_thenReturnsPayment()</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenPaymentWithIdNotExists_thenReturns404()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenValidPayment_thenReturnsAuthorized()</td>
+<td class="success">0.503s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18:40:55.379 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.checkout.payment.gateway.integrationTest.PaymentGatewayIntegrationTest]: PaymentGatewayIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:40:55.425 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.checkout.payment.gateway.PaymentGatewayApplication for test class com.checkout.payment.gateway.integrationTest.PaymentGatewayIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-12-18T18:40:55.591Z  INFO 32017 --- [    Test worker] c.c.p.g.i.PaymentGatewayIntegrationTest  : Starting PaymentGatewayIntegrationTest using Java 17.0.17 with PID 32017 (started by zawarali in /Users/zawarali/Documents/cko/payment-gateway-challenge-java)
+2025-12-18T18:40:55.592Z  INFO 32017 --- [    Test worker] c.c.p.g.i.PaymentGatewayIntegrationTest  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-12-18T18:40:56.048Z  INFO 32017 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-12-18T18:40:56.053Z  INFO 32017 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-18T18:40:56.054Z  INFO 32017 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-12-18T18:40:56.086Z  INFO 32017 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-18T18:40:56.087Z  INFO 32017 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 490 ms
+2025-12-18T18:40:56.391Z  INFO 32017 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2025-12-18T18:40:56.391Z  INFO 32017 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-12-18T18:40:56.392Z  INFO 32017 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-12-18T18:40:56.436Z  INFO 32017 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50431 (http) with context path ''
+2025-12-18T18:40:56.441Z  INFO 32017 --- [    Test worker] c.c.p.g.i.PaymentGatewayIntegrationTest  : Started PaymentGatewayIntegrationTest in 0.959 seconds (process running for 1.415)
+2025-12-18T18:40:56.918Z  INFO 32017 --- [    Test worker] c.c.p.g.service.PaymentGatewayService    : Payment d7fd5796-e7ce-45dc-af4f-172d0c87a8cb authorized by bank
+2025-12-18T18:40:56.958Z  INFO 32017 --- [    Test worker] c.c.p.g.service.PaymentGatewayService    : Payment fedda4d3-666c-4252-bdc6-8562752d7b95 declined by bank
+2025-12-18T18:40:56.972Z  INFO 32017 --- [    Test worker] c.c.p.g.service.PaymentGatewayService    : Payment ce2de09d-fa92-43c0-ba8f-418aca0292c1 authorized by bank
+2025-12-18T18:40:56.979Z  WARN 32017 --- [    Test worker] c.c.p.g.service.PaymentGatewayService    : Payment request rejected due to validation errors: [Card number is required]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.2.1</a> at 18 Dec 2025, 18:40:57</p>
+</div>
+</div>
+</body>
+</html>
