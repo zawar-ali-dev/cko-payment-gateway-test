@@ -1,7 +1,3 @@
-Here’s a polished, professional version of your design rationale that reads like a narrative suitable for a README or technical documentation:
-
----
-
 ## Design Decisions for Payment Gateway
 
 ### Layered Architecture
